@@ -22,9 +22,9 @@
         <img src="../assets/ico_send.svg" alt="nice" width="24" height="24" />
       </div>
     </div>
-    <!-- コメント -->
-    <div class="card__comment">
-      <span class="card__comment__name">user_hogehoge</span>
+    <!-- テキスト -->
+    <div class="card__desc">
+      <span class="card__desc__name">user_hogehoge</span>
       # 思い出は写真のネガみたいなものかもって最近思う。# いつか色褪せてしまうのかな。# 帰り道 # いつもありがとう。
     </div>
   </div>
@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: 'card'
+  name: 'card',
 }
 </script>
 
@@ -73,7 +73,7 @@ export default {
     }
   }
 
-  &__comment {
+  &__desc {
     font-family: "Hiragino Kaku Gothic Pro";
     font-size: 12px;
     line-height: 1.5;
