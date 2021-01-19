@@ -11,21 +11,20 @@
   </header>
 </template>
 
-<script>
-export default {
-  name: 'Header',
-  data() {
-
-  }
-}
-</script>
-
 <style lang="scss">
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+    height: 48px;
+  }
   .h {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px;
+    padding: 0 8px;
+    height: 100%;
 
     &__logo {
       font-family: 'Pacifico';

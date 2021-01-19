@@ -1,22 +1,20 @@
 <template>
   <AppHeader />
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <CardList />
 </template>
 
 <style lang="scss">
-
 </style>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
 import AppHeader from './components/AppHeader.vue';
+import CardList from './components/CardList.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    AppHeader
+    AppHeader,
+    CardList
   }
 }
 </script>
