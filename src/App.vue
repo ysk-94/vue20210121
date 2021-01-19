@@ -3,9 +3,6 @@
   <CardList />
 </template>
 
-<style lang="scss">
-</style>
-
 <script>
 import AppHeader from './components/AppHeader.vue';
 import CardList from './components/CardList.vue'
