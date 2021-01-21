@@ -34,6 +34,7 @@
     <!-- コメントリスト -->
     <ul class="card__comments">
       <li v-for="(comment, index) in comments" :key="index">{{ comment }}</li>
+      <li v-if='!hasComments'>まだコメントはありません。</li>
     </ul>
     <!-- コメント入力フォーム -->
     <div class="card__form" v-show="showCommentInput">
