@@ -24,6 +24,20 @@
     </div>
     <!-- テキスト -->
     <div class="card__desc">
+      <!-- ナイス件数 -->
+      <!-- <div class="card__nice">
+        件のnice!
+      </div> -->
+      <!-- コメントリスト -->
+      <!-- <ul class="card__comments"> -->
+        <!-- <li></li> -->
+        <!-- <li>まだコメントはありません。</li> -->
+      <!-- </ul> -->
+      <!-- コメント入力フォーム -->
+      <!-- <div class="card__form">
+        <input type="text" placeholder="ナイスなコメントを入力" />
+        <img src="../assets/ico_send.svg" alt="nice" width="20" height="20"/>
+      </div> -->
       <span class="card__desc__name">user_hogehoge</span>
       # 思い出は写真のネガみたいなものかもって最近思う。# いつか色褪せてしまうのかな。# 帰り道 # いつもありがとう。
     </div>
@@ -62,6 +76,12 @@ export default {
     }
   }
 
+  &__img {
+    img {
+      object-fit: cover;
+    }
+  }
+
   &__action {
     display: flex;
     margin-top: 16px;
@@ -72,6 +92,50 @@ export default {
       width: 112px;
     }
   }
+
+  &__nice {
+  font-size: 10px;
+  margin: 8px;
+  color: #555;
+}
+
+&__comments {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 8px;
+
+  li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 8px;
+  }
+}
+
+&__form {
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  padding-right: 16px;
+
+  input {
+    color: #555;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid #eee;
+    border-radius: 24px;
+    width: 90%;
+  }
+}
 
   &__desc {
     font-family: "Hiragino Kaku Gothic Pro";
